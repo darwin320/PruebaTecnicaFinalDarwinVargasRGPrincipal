@@ -5,7 +5,7 @@ const Order = require('./order');
 const syncDB = async () => {
     try {
         await sequelize.authenticate();
-        console.log("🔥 Database connected!");
+        console.log("Database connected!");
 
         await sequelize.sync();
 
